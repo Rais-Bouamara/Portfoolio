@@ -11,6 +11,9 @@ header{
     width: 800px;
     align-items: center;
     border: solid 5px black;
+    position: sticky;
+    width: 100%;
+    justify-content: center;
 }
 
 body{
@@ -278,4 +281,11 @@ margin-bottom: 50px;
 
 .bg-beige{
     background-color: #FEFFF0;
+}
+/*--------------------------------------------------CLASSE DE COULEURS----------------------------------------*/
+.btn-hero{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
 }
