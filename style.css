@@ -11,13 +11,19 @@ header{
     width: 800px;
     align-items: center;
     border: solid 5px black;
-    position: sticky;
+    position: fixed;
     width: 100%;
     justify-content: center;
+    z-index: 1;
+    background-color: #FEFFF0;
 }
 
 body{
     font-family: "Space Grotesk", sans-serif;
+    background-image: url(asset/abstract\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .suppuce{
@@ -51,6 +57,10 @@ body{
 
 .w-70{
     width: 70%;
+}
+
+.w-60{
+    width: 60%;
 }
 
 .w-55{
@@ -117,6 +127,27 @@ body{
     width: 1px;
 }
 
+.w160{
+    width: 160px;
+}
+
+.w90{
+    width: 90px;
+}
+
+.w60{
+    width: 60px;
+}
+
+.w30{
+    width: 30px;
+}
+
+.w15{
+    width: 15px;
+}
+
+
 .gap190{
     gap: 190px;
 }
@@ -137,8 +168,16 @@ body{
     gap: 30px;
 }
 
+.gap15{
+    gap: 15px;
+}
+
 .gap10{
     gap: 10px;
+}
+
+.gap5{
+    gap: 5px;
 }
 
 .h190{
@@ -259,6 +298,10 @@ margin-bottom: 50px;
 .p60{
     padding: 60px 0px;
 }
+
+.p60-20{
+    padding: 60px 20px;
+}
 /*----------------------------------------------------CONTAINER----------------------------------------------*/
 .container1200{
     max-width: 1200px;
@@ -282,10 +325,46 @@ margin-bottom: 50px;
 .bg-beige{
     background-color: #FEFFF0;
 }
-/*--------------------------------------------------CLASSE DE COULEURS----------------------------------------*/
+/*--------------------------------------------------CLASSE BOUTONS ET CARTES----------------------------------------*/
 .btn-hero{
-    background-color: antiquewhite;
+    background-color: black;
     border-radius: 10px;
     padding: 10px 20px;
-    color: black;
+    color: #FEFFF0;
+}
+
+.carteProj{
+    background-color: #FEFFF0;
+    padding: 16px 22px;
+    border: solid 5px black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/*--------------------------------------------------CLASSE MISE EN FORMES----------------------------------------*/
+.arrondi-bas{
+    border-radius: 0px 0px 40px 40px;
+}
+
+.hero {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-photo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-6%);
+  height: 85%;
+  object-fit: cover;
+  /* optionnel : détourage si photo sur fond uni */
+  mix-blend-mode: multiply;
 }
